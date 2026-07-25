@@ -59,7 +59,7 @@ function ProductPage() {
             <div className="mt-8">
               <p className="eyebrow" style={{ color: "var(--ink)", opacity: 0.5 }}>Notes</p>
               <div className="mt-3 flex flex-wrap gap-2">
-                {product.notes.map((n) => (
+                {product.notes.map((n: string) => (
                   <span key={n} className="border border-border px-3 py-1 text-xs">{n}</span>
                 ))}
               </div>
