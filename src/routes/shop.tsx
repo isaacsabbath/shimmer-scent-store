@@ -24,10 +24,10 @@ function Shop() {
       <section className="mx-auto max-w-5xl px-6 py-16 text-center md:py-24">
         <span className="eyebrow">The Collection</span>
         <h1 className="mt-6 font-display text-5xl md:text-7xl">
-          Every oil is a <span className="font-script" style={{ color: "var(--maroon)" }}>mood.</span>
+          Every butter is a <span className="font-script" style={{ color: "var(--maroon)" }}>mood.</span>
         </h1>
         <p className="mx-auto mt-6 max-w-xl opacity-70">
-          Four signature blends, each pressed from wild-harvested botanicals and poured by hand in
+          Four whipped body butters, each blended from shea, mango and coconut, and whipped by hand in
           batches of forty.
         </p>
       </section>
