@@ -9,16 +9,16 @@ import { products } from "@/lib/products";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Muthonies Little World — Botanical Body Oils" },
+      { title: "Muthonies Little World — Whipped Body Butters" },
       {
         name: "description",
         content:
-          "Small-batch botanical body oils, hand-blended in Nairobi. A ritual of glow — rose, argan, jasmine, vanilla.",
+          "Small-batch whipped body butters, hand-blended in Nairobi. A ritual of glow — Sakura, Minty Bliss, Sweet Orange, Mocha Harmony.",
       },
-      { property: "og:title", content: "Muthonies Little World — Botanical Body Oils" },
+      { property: "og:title", content: "Muthonies Little World — Whipped Body Butters" },
       {
         property: "og:description",
-        content: "Small-batch botanical body oils, hand-blended in Nairobi.",
+        content: "Small-batch whipped body butters, hand-blended in Nairobi.",
       },
     ],
   }),
@@ -48,13 +48,13 @@ function Home() {
             A little world of
             <br />
             <span className="font-script text-6xl md:text-8xl lg:text-9xl" style={{ color: "#e8b0a8" }}>
-              botanical
+              whipped
             </span>
             <br />
-            body oils.
+            body butters.
           </h1>
           <p className="mt-8 max-w-md text-sm leading-relaxed opacity-85">
-            Slow-blended in small batches. Wild-harvested florals, cold-pressed oils, and the ritual of glow.
+            Slow-whipped in small batches. Raw shea, mango butter, cold-pressed oils, and the ritual of glow.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link to="/shop" className="btn-primary">
@@ -86,9 +86,9 @@ function Home() {
         <div className="mx-auto max-w-[1400px]">
           <div className="mb-16 flex flex-col items-center text-center">
             <span className="eyebrow">The Collection</span>
-            <h2 className="mt-4 font-display text-5xl md:text-6xl">Four signature oils</h2>
+            <h2 className="mt-4 font-display text-5xl md:text-6xl">Four signature butters</h2>
             <p className="mt-6 max-w-xl text-sm opacity-70">
-              Each blend a mood — a botanical, a season, a memory pressed into a bottle.
+              Each whip a mood — a botanical, a season, a memory scooped into a jar.
             </p>
           </div>
 
@@ -120,7 +120,7 @@ function Home() {
 
           <div className="mt-20 text-center">
             <Link to="/shop" className="btn-outline" style={{ color: "var(--maroon)" }}>
-              <span>View All Oils</span>
+              <span>View All Butters</span>
             </Link>
           </div>
         </div>

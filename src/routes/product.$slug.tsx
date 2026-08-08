@@ -25,7 +25,7 @@ export const Route = createFileRoute("/product/$slug")({
 
 function ProductPage() {
   const { product } = Route.useLoaderData();
-  const [size, setSize] = useState("50ml");
+  const [size, setSize] = useState("250ml");
   const [qty, setQty] = useState(1);
 
   const related = products.filter((p) => p.slug !== product.slug).slice(0, 3);
@@ -48,7 +48,7 @@ function ProductPage() {
           </div>
 
           <div className="flex flex-col justify-center py-8">
-            <span className="eyebrow">Signature Oil</span>
+            <span className="eyebrow">Whipped Body Butter</span>
             <h1 className="mt-4 font-display text-5xl md:text-6xl">{product.name}</h1>
             <p className="mt-2 font-script text-3xl" style={{ color: "var(--maroon)" }}>{product.tagline}</p>
 
@@ -68,7 +68,7 @@ function ProductPage() {
             <div className="mt-8">
               <p className="eyebrow" style={{ color: "var(--ink)", opacity: 0.5 }}>Size</p>
               <div className="mt-3 flex gap-3">
-                {["30ml", "50ml", "100ml"].map((s) => (
+                {["100ml", "250ml", "500ml"].map((s) => (
                   <button
                     key={s}
                     onClick={() => setSize(s)}
@@ -105,8 +105,8 @@ function ProductPage() {
               <details className="border-b border-border pb-4">
                 <summary className="cursor-pointer eyebrow" style={{ color: "var(--ink)" }}>How to Use</summary>
                 <p className="mt-3 opacity-70">
-                  Warm three drops between your palms. Press onto damp skin after bathing, from
-                  shoulders to feet. Breathe.
+                  Scoop a small amount and warm it between your palms. Massage onto clean, damp skin
+                  from shoulders to feet. Breathe.
                 </p>
               </details>
               <details className="border-b border-border pb-4">
