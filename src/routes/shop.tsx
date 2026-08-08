@@ -7,9 +7,9 @@ export const Route = createFileRoute("/shop")({
   head: () => ({
     meta: [
       { title: "Shop — Muthonies Little World" },
-      { name: "description", content: "Browse our collection of small-batch botanical body oils." },
+      { name: "description", content: "Browse our collection of small-batch whipped body butters." },
       { property: "og:title", content: "Shop — Muthonies Little World" },
-      { property: "og:description", content: "Browse our collection of small-batch botanical body oils." },
+      { property: "og:description", content: "Browse our collection of small-batch whipped body butters." },
     ],
   }),
   component: Shop,
