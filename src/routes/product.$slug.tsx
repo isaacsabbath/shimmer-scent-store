@@ -25,7 +25,7 @@ export const Route = createFileRoute("/product/$slug")({
 
 function ProductPage() {
   const { product } = Route.useLoaderData();
-  const [size, setSize] = useState("50ml");
+  const [size, setSize] = useState("250ml");
   const [qty, setQty] = useState(1);
 
   const related = products.filter((p) => p.slug !== product.slug).slice(0, 3);
