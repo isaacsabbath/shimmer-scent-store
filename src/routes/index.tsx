@@ -34,7 +34,7 @@ function Home() {
       <section className="relative h-screen min-h-[700px] w-full overflow-hidden">
         <img
           src={heroImg}
-          alt="Muthonies Little World body oils"
+          alt="Muthonies Little World whipped body butters"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(20,10,8,0.35), rgba(20,10,8,0.55))" }} />
