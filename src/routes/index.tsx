@@ -48,13 +48,13 @@ function Home() {
             A little world of
             <br />
             <span className="font-script text-6xl md:text-8xl lg:text-9xl" style={{ color: "#e8b0a8" }}>
-              botanical
+              whipped
             </span>
             <br />
-            body oils.
+            body butters.
           </h1>
           <p className="mt-8 max-w-md text-sm leading-relaxed opacity-85">
-            Slow-blended in small batches. Wild-harvested florals, cold-pressed oils, and the ritual of glow.
+            Slow-whipped in small batches. Raw shea, mango butter, cold-pressed oils, and the ritual of glow.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link to="/shop" className="btn-primary">
