@@ -105,8 +105,8 @@ function ProductPage() {
               <details className="border-b border-border pb-4">
                 <summary className="cursor-pointer eyebrow" style={{ color: "var(--ink)" }}>How to Use</summary>
                 <p className="mt-3 opacity-70">
-                  Warm three drops between your palms. Press onto damp skin after bathing, from
-                  shoulders to feet. Breathe.
+                  Scoop a small amount and warm it between your palms. Massage onto clean, damp skin
+                  from shoulders to feet. Breathe.
                 </p>
               </details>
               <details className="border-b border-border pb-4">
