@@ -86,9 +86,9 @@ function Home() {
         <div className="mx-auto max-w-[1400px]">
           <div className="mb-16 flex flex-col items-center text-center">
             <span className="eyebrow">The Collection</span>
-            <h2 className="mt-4 font-display text-5xl md:text-6xl">Four signature oils</h2>
+            <h2 className="mt-4 font-display text-5xl md:text-6xl">Four signature butters</h2>
             <p className="mt-6 max-w-xl text-sm opacity-70">
-              Each blend a mood — a botanical, a season, a memory pressed into a bottle.
+              Each whip a mood — a botanical, a season, a memory scooped into a jar.
             </p>
           </div>
 
