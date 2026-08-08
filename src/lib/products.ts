@@ -1,7 +1,7 @@
-import rose from "@/assets/product-rose.jpg";
-import argan from "@/assets/product-argan.jpg";
-import jasmine from "@/assets/product-jasmine.jpg";
-import vanilla from "@/assets/product-vanilla.jpg";
+import sakura from "@/assets/product-sakura.png.asset.json";
+import minty from "@/assets/product-minty-bliss.png.asset.json";
+import sweetOrange from "@/assets/product-sweet-orange.png.asset.json";
+import mocha from "@/assets/product-mocha-harmony.png.asset.json";
 
 export type Product = {
   slug: string;
@@ -16,48 +16,48 @@ export type Product = {
 
 export const products: Product[] = [
   {
-    slug: "rose",
-    name: "Damask Rose",
+    slug: "sakura",
+    name: "Sakura",
     tagline: "The romantic",
     price: "KSh 2,400",
-    image: rose,
-    notes: ["Bulgarian rose", "Sweet almond", "Vitamin E"],
+    image: sakura.url,
+    notes: ["Cherry blossom", "Shea butter", "Squalane"],
     description:
-      "A honeyed, floral oil pressed with wild-harvested Damask rose petals. Softens skin, quiets the mind, and lingers like a memory of a warm evening.",
-    ingredients: "Prunus amygdalus dulcis oil, Rosa damascena flower oil, Tocopherol.",
+      "A soft, petal-pink whip of shea and mango butter kissed with cherry blossom. Heals, moisturises and rejuvenates — light enough for everyday, tender enough for a ritual.",
+    ingredients: "Shea Butter, Coconut Oil, Mango Butter, Squalane, Sakura fragrance.",
   },
   {
-    slug: "argan",
-    name: "Golden Argan",
-    tagline: "The nourisher",
-    price: "KSh 2,600",
-    image: argan,
-    notes: ["Moroccan argan", "Jojoba", "Neroli"],
-    description:
-      "Cold-pressed argan folded with jojoba for a fast-drinking, weightless glow. For dry skin that wants to feel silk again.",
-    ingredients: "Argania spinosa kernel oil, Simmondsia chinensis, Citrus aurantium.",
-  },
-  {
-    slug: "jasmine",
-    name: "Night Jasmine",
-    tagline: "The seductress",
-    price: "KSh 2,800",
-    image: jasmine,
-    notes: ["Sambac jasmine", "Coconut", "Ylang ylang"],
-    description:
-      "Intoxicating jasmine sambac melted into virgin coconut. A warm, indolic hush of an oil for slow evenings and bare shoulders.",
-    ingredients: "Cocos nucifera oil, Jasminum sambac, Cananga odorata flower oil.",
-  },
-  {
-    slug: "vanilla",
-    name: "Burnt Vanilla",
-    tagline: "The comfort",
+    slug: "minty-bliss",
+    name: "Minty Bliss",
+    tagline: "The awakener",
     price: "KSh 2,500",
-    image: vanilla,
-    notes: ["Madagascar vanilla", "Sweet almond", "Sandalwood"],
+    image: minty.url,
+    notes: ["Peppermint", "Shea butter", "pH balanced"],
     description:
-      "A soft gourmand — vanilla pods steeped in almond, warmed with a whisper of sandalwood. Skin like caramel light.",
-    ingredients: "Prunus amygdalus dulcis oil, Vanilla planifolia, Santalum album.",
+      "Cool, clean and reviving. Whipped shea folded with peppermint for tired legs and warm mornings — sinks in fast, leaves skin breathing.",
+    ingredients: "Purified Water, Shea Butter, Coconut Oil, Peppermint Oil, Squalane.",
+  },
+  {
+    slug: "sweet-orange",
+    name: "Sweet Orange",
+    tagline: "The sunshine",
+    price: "KSh 2,500",
+    image: sweetOrange.url,
+    notes: ["Sweet orange", "Shea butter", "Maca"],
+    description:
+      "Citrus-bright and buttery. A golden whip that lifts the mood while it softens elbows, knees and everything in between.",
+    ingredients: "Shea Butter, Maca, Coconut Oil, Sweet Orange essential oil.",
+  },
+  {
+    slug: "mocha-harmony",
+    name: "Mocha Harmony",
+    tagline: "The comfort",
+    price: "KSh 2,600",
+    image: mocha.url,
+    notes: ["Cocoa", "Coffee", "Shea butter"],
+    description:
+      "A warm gourmand — cocoa and roasted coffee whipped into shea. Rich, grounding, and made for slow evenings and bare shoulders.",
+    ingredients: "Purified Water, Shea Butter, Cocoa Butter, Coffee extract, Squalane.",
   },
 ];
 
