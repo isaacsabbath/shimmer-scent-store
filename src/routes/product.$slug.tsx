@@ -68,7 +68,7 @@ function ProductPage() {
             <div className="mt-8">
               <p className="eyebrow" style={{ color: "var(--ink)", opacity: 0.5 }}>Size</p>
               <div className="mt-3 flex gap-3">
-                {["30ml", "50ml", "100ml"].map((s) => (
+                {["100ml", "250ml", "500ml"].map((s) => (
                   <button
                     key={s}
                     onClick={() => setSize(s)}
