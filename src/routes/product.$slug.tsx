@@ -48,7 +48,7 @@ function ProductPage() {
           </div>
 
           <div className="flex flex-col justify-center py-8">
-            <span className="eyebrow">Signature Oil</span>
+            <span className="eyebrow">Whipped Body Butter</span>
             <h1 className="mt-4 font-display text-5xl md:text-6xl">{product.name}</h1>
             <p className="mt-2 font-script text-3xl" style={{ color: "var(--maroon)" }}>{product.tagline}</p>
 
