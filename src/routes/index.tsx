@@ -9,16 +9,16 @@ import { products } from "@/lib/products";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Muthonies Little World — Botanical Body Oils" },
+      { title: "Muthonies Little World — Whipped Body Butters" },
       {
         name: "description",
         content:
-          "Small-batch botanical body oils, hand-blended in Nairobi. A ritual of glow — rose, argan, jasmine, vanilla.",
+          "Small-batch whipped body butters, hand-blended in Nairobi. A ritual of glow — Sakura, Minty Bliss, Sweet Orange, Mocha Harmony.",
       },
-      { property: "og:title", content: "Muthonies Little World — Botanical Body Oils" },
+      { property: "og:title", content: "Muthonies Little World — Whipped Body Butters" },
       {
         property: "og:description",
-        content: "Small-batch botanical body oils, hand-blended in Nairobi.",
+        content: "Small-batch whipped body butters, hand-blended in Nairobi.",
       },
     ],
   }),
