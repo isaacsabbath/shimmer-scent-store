@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import heroImg from "@/assets/hero-oils.jpg";
+import heroImg from "@/assets/hero-butters.jpg";
 import lifestyle from "@/assets/lifestyle-glow.jpg";
 import botanicals from "@/assets/story-botanicals.jpg";
 import { products } from "@/lib/products";
@@ -34,7 +34,7 @@ function Home() {
       <section className="relative h-screen min-h-[700px] w-full overflow-hidden">
         <img
           src={heroImg}
-          alt="Muthonies Little World body oils"
+          alt="Muthonies Little World whipped body butters"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(20,10,8,0.35), rgba(20,10,8,0.55))" }} />
