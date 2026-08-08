@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
-import heroImg from "@/assets/hero-oils.jpg";
+import heroImg from "@/assets/hero-butters.jpg";
 import lifestyle from "@/assets/lifestyle-glow.jpg";
 import botanicals from "@/assets/story-botanicals.jpg";
 import { products } from "@/lib/products";
