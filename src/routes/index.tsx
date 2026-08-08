@@ -120,7 +120,7 @@ function Home() {
 
           <div className="mt-20 text-center">
             <Link to="/shop" className="btn-outline" style={{ color: "var(--maroon)" }}>
-              <span>View All Oils</span>
+              <span>View All Butters</span>
             </Link>
           </div>
         </div>
