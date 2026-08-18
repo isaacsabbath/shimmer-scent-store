@@ -1,14 +1,20 @@
-# Welcome to your Lovable project
+# Body Oil Boutique
+
+Imagine you are a developer and a client wants a small ecommerce site for selling body oils and want you to replicate this sites designr:https://www.arizonagrandgolf.com The UI/UX.
+
+Ask any question before answering for clarity.
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://shimmer-scent-store.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/97a5d0cf-4f8c-4e96-8e4a-d3dc76605a71).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +26,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
