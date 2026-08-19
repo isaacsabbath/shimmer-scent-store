@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import logo from "@/assets/mlw-logo.jpeg.asset.json";
+import { useCart } from "@/lib/cart-context";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -12,6 +13,7 @@ const nav = [
 export function SiteHeader({ variant = "overlay" }: { variant?: "overlay" | "solid" }) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const { itemCount } = useCart();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -25,9 +27,7 @@ export function SiteHeader({ variant = "overlay" }: { variant?: "overlay" | "sol
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
-        isSolid
-          ? "bg-cream/95 backdrop-blur border-b border-border py-3"
-          : "bg-transparent py-6"
+        isSolid ? "bg-cream/95 backdrop-blur border-b border-border py-3" : "bg-transparent py-6"
       }`}
     >
       <div className="mx-auto flex max-w-[1400px] items-center justify-between px-6 md:px-12">
@@ -69,11 +69,11 @@ export function SiteHeader({ variant = "overlay" }: { variant?: "overlay" | "sol
             </Link>
           ))}
           <Link
-            to="/shop"
+            to="/cart"
             className="eyebrow"
             style={{ color: isSolid ? "var(--maroon)" : "var(--cream)" }}
           >
-            Bag (0)
+            Bag ({itemCount})
           </Link>
         </nav>
 
@@ -83,7 +83,14 @@ export function SiteHeader({ variant = "overlay" }: { variant?: "overlay" | "sol
           aria-label="Menu"
           style={{ color: isSolid ? "var(--ink)" : "var(--cream)" }}
         >
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.2">
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.2"
+          >
             {open ? (
               <path d="M6 6l12 12M18 6L6 18" />
             ) : (
@@ -112,6 +119,14 @@ export function SiteHeader({ variant = "overlay" }: { variant?: "overlay" | "sol
                 {n.label}
               </Link>
             ))}
+            <Link
+              to="/cart"
+              onClick={() => setOpen(false)}
+              className="eyebrow py-3"
+              style={{ color: "var(--maroon)" }}
+            >
+              Bag ({itemCount})
+            </Link>
           </div>
         </div>
       )}

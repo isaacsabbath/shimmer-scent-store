@@ -23,10 +23,14 @@ function Contact() {
       <section className="mx-auto max-w-4xl px-6 py-16 text-center md:py-24">
         <span className="eyebrow">Contact</span>
         <h1 className="mt-6 font-display text-5xl md:text-7xl">
-          Say <span className="font-script" style={{ color: "var(--maroon)" }}>hello.</span>
+          Say{" "}
+          <span className="font-script" style={{ color: "var(--maroon)" }}>
+            hello.
+          </span>
         </h1>
         <p className="mx-auto mt-6 max-w-lg opacity-70">
-          For orders, gifting, wholesale, or just to chat about oils and rituals — we love a good letter.
+          For orders, gifting, wholesale, or just to chat about oils and rituals — we love a good
+          letter.
         </p>
       </section>
 
@@ -39,7 +43,9 @@ function Contact() {
             </div>
             <Field label="Subject" placeholder="A little note about…" />
             <div>
-              <label className="eyebrow" style={{ color: "var(--ink)", opacity: 0.5 }}>Message</label>
+              <label className="eyebrow" style={{ color: "var(--ink)", opacity: 0.5 }}>
+                Message
+              </label>
               <textarea
                 rows={6}
                 placeholder="Write here…"
@@ -89,10 +95,15 @@ function Contact() {
   );
 }
 
-function Field({ label, ...rest }: { label: string } & React.InputHTMLAttributes<HTMLInputElement>) {
+function Field({
+  label,
+  ...rest
+}: { label: string } & React.InputHTMLAttributes<HTMLInputElement>) {
   return (
     <div>
-      <label className="eyebrow" style={{ color: "var(--ink)", opacity: 0.5 }}>{label}</label>
+      <label className="eyebrow" style={{ color: "var(--ink)", opacity: 0.5 }}>
+        {label}
+      </label>
       <input
         {...rest}
         className="mt-3 w-full border-b border-ink bg-transparent py-2 outline-none placeholder:opacity-40 focus:border-[var(--maroon)]"

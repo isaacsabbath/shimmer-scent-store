@@ -8,7 +8,11 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: "Our Story — Muthonies Little World" },
-      { name: "description", content: "A kitchen-table brand born in Nairobi. Small-batch botanical body oils, blended slowly by hand." },
+      {
+        name: "description",
+        content:
+          "A kitchen-table brand born in Nairobi. Small-batch botanical body oils, blended slowly by hand.",
+      },
       { property: "og:title", content: "Our Story — Muthonies Little World" },
       { property: "og:description", content: "A kitchen-table brand born in Nairobi." },
     ],
@@ -27,7 +31,9 @@ function About() {
         <h1 className="mt-6 font-display text-5xl md:text-7xl leading-[1.05]">
           Small hands.
           <br />
-          <span className="font-script" style={{ color: "var(--maroon)" }}>Slow rituals.</span>
+          <span className="font-script" style={{ color: "var(--maroon)" }}>
+            Slow rituals.
+          </span>
         </h1>
         <p className="mx-auto mt-8 max-w-2xl leading-relaxed opacity-75">
           Muthonies Little World began on a kitchen table in Nairobi, with three amber bottles and a
@@ -36,7 +42,11 @@ function About() {
       </section>
 
       <section className="px-6 pb-16">
-        <img src={botanicals} alt="Botanicals" className="mx-auto max-h-[70vh] w-full max-w-6xl object-cover" />
+        <img
+          src={botanicals}
+          alt="Botanicals"
+          className="mx-auto max-h-[70vh] w-full max-w-6xl object-cover"
+        />
       </section>
 
       <section className="grid gap-16 px-6 py-24 md:grid-cols-2 md:px-12">
@@ -46,9 +56,9 @@ function About() {
         </div>
         <div className="max-w-lg space-y-5 leading-relaxed opacity-80">
           <p>
-            I grew up between my grandmother's garden in Nyeri and a bathroom shelf crowded with tiny
-            bottles. Every evening she would rub coconut oil warmed with rosemary into my sister's
-            hair, humming. That was my first lesson in ritual.
+            I grew up between my grandmother's garden in Nyeri and a bathroom shelf crowded with
+            tiny bottles. Every evening she would rub coconut oil warmed with rosemary into my
+            sister's hair, humming. That was my first lesson in ritual.
           </p>
           <p>
             Years later, in a rented flat in Kilimani, I started blending oils for friends. A rose
@@ -56,8 +66,8 @@ function About() {
             comfort. The little world grew, one bottle at a time.
           </p>
           <p>
-            Today, everything you receive is still made in that same slow, tender way — by four pairs
-            of hands, in batches of forty, poured under the same warm light.
+            Today, everything you receive is still made in that same slow, tender way — by four
+            pairs of hands, in batches of forty, poured under the same warm light.
           </p>
         </div>
       </section>
@@ -68,7 +78,9 @@ function About() {
       >
         <div className="mx-auto max-w-6xl">
           <div className="mb-16 text-center">
-            <span className="eyebrow" style={{ color: "var(--cream)", opacity: 0.75 }}>What We Believe</span>
+            <span className="eyebrow" style={{ color: "var(--cream)", opacity: 0.75 }}>
+              What We Believe
+            </span>
             <h2 className="mt-4 font-display text-4xl md:text-5xl">Four small promises.</h2>
           </div>
           <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
@@ -98,7 +110,9 @@ function About() {
             <h2 className="mt-4 font-display text-4xl md:text-5xl leading-[1.1]">
               Bathe. Warm. Press.
               <br />
-              <span className="font-script" style={{ color: "var(--maroon)" }}>Belong.</span>
+              <span className="font-script" style={{ color: "var(--maroon)" }}>
+                Belong.
+              </span>
             </h2>
             <p className="mt-6 leading-relaxed opacity-75">
               Our oils are best applied on damp skin, after a warm bath. Three drops between the
